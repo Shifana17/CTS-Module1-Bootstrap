@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3.1</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: #4e73df;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: 1fr 1fr; /* 2 per row on tablets */
+      }
+    }
+
+    @media (min-width: 992px) {
+      .container {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 per row on desktops */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+    <div class="box">Column 3</div>
+  </div>
+
+</body>
+</html>
